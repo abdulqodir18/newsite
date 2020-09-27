@@ -9,109 +9,111 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+
   <div class="big-contiener">
-    
+
+    <div class="contener-header">
+
     <header class="site-heder">
-      
+
       <h1 class="heder-title">site heder</h1>
-      
+
       <div class="header-top">
         <a href="#">
           <img  class="site-logo" src="img/NAMANGANLIKLAR24.svg" alt="NAMANGANLIKLAR24" width="250" height="33">
         </a>
-        
-        
+
+
         <ul class="kurs-list">
-          
+
           <li class="kurs">
             <span class="kurs-icon">$</span>
             10137.2
           </li>
-          
+
           <li class="kurs">
             <span class="kurs-icon">P</span>
             138.26
           </li>
-          
+
           <li class="kurs">
             <span class="kurs-icon">E</span>
             10988.72
           </li>
-          
+
         </ul>
-        
+
         <form class="header-form" action="https://echo.htmlacademy.ru">
-          
+
           <input class="form-search" type="search" name="search" placeholder="You may search" aria-label="search" required >
-          
+
           <button class="form-search-icon" type="submit">
             <img src="img/Vector@1x.png" alt="search" width="18" height="18" srcset="img/Vector@1x.png 1x,img/Vector@2x.png 2x">
           </button>
-          
+
         </form>
-        
+
         <select class="leanguege" name="leanguege" aria-label="leanguege">
           <option value="uzbek">Uzb</option>
           <option value="russian">Rus</option>
         </select>
-        
-        
+
+
         <a class="telagram" href="#">
           <img class="teledram-icon" src="img/cib_telegram.png" alt="Подписатся" width="20" height="20" srcset="img/cib_telegram.png 1x,img/cib_telegram@2x.png 2x">
           Подписатся
         </a>
-        
+
       </div><!--header-top-->
-      
-      
-      
+
+
+
       <nav class="site-navigation">
         <ul class="navigation-list">
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#">Узбекистана</a>
           </li>
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#">Мир</a>
           </li>
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#">Экономика</a>
           </li>
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#">Политика</a>
           </li>
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#">Общество</a>
           </li>
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#"> Технологии</a>
           </li>
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#">Культура</a>
           </li>
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#"> Происшествия</a>
           </li>
-          
+
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#">Спорт</a>
           </li>
           <li class="navigation-list-teype">
             <a class="nav-list-teype-link" href="#">Туризм</a>
           </li>
-          
+
         </ul>
-        
+
       </nav>
-      
+
       <aside  class="nrg-banner" >
         <a href="https://u-nrg.uz" target="_blank">
           <img src="img/nrg.png" alt="" width="1300" height="99"
@@ -119,164 +121,185 @@
           <!-- <img src="img/nrg-svg.svg" alt="NRG Oybek" width="1300" height="99"> -->
         </a>
       </aside>
-      
+
     </header><!--site-header-->
-    
+
+  </div><!--contenier-header-->
+
+  <div class="contener-main">
+
     <main class="site-main">
       <section class="first-section">
         <form class="first-section-form" action="https://echo.htmlacademy.ru" method="POST">
-          
+
           <h2 class="form-title">Напишите нам</h2>
-          
+
           <input class="form-input" type="text" name="user name" placeholder="Имя" required aria-label="Имя">
-          
+
           <input class="form-input" type="email" name="user email" placeholder="Электронная почта" required aria-label="Электронная почта">
-          
+
           <input class="form-input" type="number" name="user phone number" placeholder="Номер телефона" required aria-label="Номер телефона">
-          
+
           <input class="form-input" type="text" name="user thema" placeholder="Тема" required aria-label="Тема">
-          
-          <textarea class="form-textarea" name="text"  cols="100" rows="50">Текст</textarea>
-          
-          <input class="input-file-type" type="file" name="user file"  required aria-label="add file">
-          
+
+          <textarea class="form-textarea" name="text" placeholder="text"cols="100" rows="50"></textarea>
+
+          <div class="input-file">
+
+            <label for="user-file">Прикрепить файл
+              <img class="user-file-img" src="img/Frame.png" alt="add-file" width="24" height="24"
+              srcset="img/Frame.png 1x,img/Frame@2x.png 2x">
+            </label>
+
+          <input class="input-file-type" id="user-file" type="file" name="user file"  required >
+
+        </div>
+
+        <div class="input-password-contenier">
           <!-- <label for="password">4 k 7 Z a</label> -->
           <input class="input-password"  type="password" name="password" placeholder="Код">
-          
+         <span class="password-exsapl">4 k 7 Z a</span>
+
+        </div>
+
           <button class="form-submit" type="submit">Отправить</button>
-          
+
         </form>
-        
+
       </section>
-      
+
       <section class="second-section">
-        
+
         <img class="second-section-logo" src="img/NAMANGANLIKLAR24.svg" alt="NAMANGANLIKLAR24" width="329" height="33">
-        
+
         <ul class="link-list">
-          
+
           <li class="link-list-type">
             <h3 class="link-title">Электронная почта</h3>
             <a class="link-adres" href="#">info@namanganliklar24.uz</a>
           </li>
-          
+
           <li class="link-list-type">
             <h3 class="link-title">Социальные сети</h3>
             <a class="link-adres" href="#">
-              
+
               <img class="link-adres-img" src="img/facebook.png" alt="facebook" width="32" height="32"
               srcset="img/facebook.png 1x,img/facebook@2x.png 2x">
-              
+
               <img class="link-adres-img" src="img/twitter.png" alt="twitter" width="32" height="32"
               srcset="img/twitter.png 1x,img/twitter@2x.png 2x">
-              
+
               <img class="link-adres-img" src="img/odnoklasnik.png" alt="odnoklasnik" width="32" height="32"
               srcset="img/odnoklasnik.png 1x,img/odnoklasnik@2x.png 2x">
-              
+
             </a>
           </li>
-          
+
           <li class="link-list-type">
             <h3 class="link-title">Телеграм канал</h3>
             <a class="link-adres link-adres-tlegram" href="#">
-              
+
               <img class="link-adres-icon" src="img/cib_telegram.png" alt="" width="20" height="20"
               srcset="img/cib_telegram.png 1x,img/cib_telegram@2x.png 2x">
-              
+
               <p class="link-adres-tlegram-title">Подписатся</p>
             </a>
           </li>
-          
+
           <li class="link-list-type">
             <h3 class="link-title">Мобильная приложение</h3>
             <a class="link-adres" href="#">
-              
+
               <img class="link-adres-img" src="img/appleStore.png" alt="appleStore" width="111" height="33"
               srcset="img/appleStore.png 1x,img/appleStore@2x.png 2x">
-              
+
               <img class="link-adres-img" src="img/googlePlay.png" alt="googlePlay" width="111" height="33"
               srcset="img/googlePlay.png 1x,img/googlePlay@2x.png 2x">
             </a>
           </li>
-          
+
         </ul>
-        
+
       </section><!--second-section-->
-      
+
     </main><!--site-main-->
-    
+
+  </div><!--contenier-main-->
+
+  <div class="contenier-footer">
     <footer class="site-footer">
-      
+
       <div class="footer-header">
-        
+
         <a class="footer-header-logo" href="#">
-          
+
           <img src="img/logo-namanganlikalr.svg" alt="Namanganliklar_24" width="173" height="21">
-          
+
         </a>
-        
+
         <p class="footer-header-title">Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</p>
-        
+
         <a class="footer-header-link" href="#">
-          
+
           <img src="img/telegram.png" alt="telagram" width="20" height="20"
           srcset="img/telegram.png 1x,img/telegram@2x.png 2x">
-          
+
           <p class="footer-header-link-p">Подписатся</p>
-          
+
         </a>
-        
+
       </div>
-      
+
       <nav class="footer-nav">
         <section class="footer-nav-section">
           <h2 class="footer-nav-section-title">О сайте</h2>
           <p class="footer-nav-section-p">Воспроизводство, копирование, тиражирование, распространение и иное использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
           </p>
         </section>
-        
+
         <ul class="footer-nav-list">
-          
+
           <li class="footer-nav-list-link-type">
             <a class="footer-nav-list-link" href="#">Информация о сайте</a>
           </li>
-          
+
           <li class="footer-nav-list-link-type">
             <a class="footer-nav-list-link" href="#">Напишите нам</a>
           </li>
-          
+
           <li class="footer-nav-list-link-type">
             <a class="footer-nav-list-link" href="#">Реклама</a>
           </li>
-          
+
           <li class="footer-nav-list-link-type">
             <a class="footer-nav-list-link" href="#">Прислать новость</a>
           </li>
-          
+
         </ul>
-        
+
         <ul class="footer-nav-list-second">
-          
+
           <li class="footer-nav-list-link-type">
             <a class="footer-nav-list-link" href="#">Информация о сайте</a>
           </li>
-          
+
           <li class="footer-nav-list-link-type">
             <a class="footer-nav-list-link" href="#">Напишите нам</a>
           </li>
-          
+
           <li class="footer-nav-list-link-type">
             <a class="footer-nav-list-link" href="#">Реклама</a>
           </li>
-          
+
         </ul>
-        
+
       </nav>
-      
+
     </footer>
-    
-    
+
+  </div><!--contenier-footer-->
+
   </div><!--big-contenier-->
-  
+
 </body>
 </html>

@@ -221,8 +221,39 @@ body{
   margin-bottom: 20px;
 }
 .input-file-type{
-  width: 330px;
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.input-file{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 221px;
+  background-color: #F1F1F1;
+  border: 1px solid #7693c2;
+  border-radius: 5px;
   margin-bottom: 20px;
+  padding: 10px;
+}
+.user-file{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #888888;
+  padding: 0px;
+  margin: 0px;
+}
+.user-file-img{
+  margin: 0px;
+  font-size: 0px;
+  margin-left: 10px;
 }
 .input-password{
   width: 221px;
@@ -233,13 +264,21 @@ body{
   border: 1px solid #7693c2;
   border-radius: 5px;
 }
-.input-password::before{
-  content: "4 k 7 Z a";
+.password-exsapl{
+  margin-left: 18px;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 29px;
+  color: #000000;
+}
+/* .input-password::after{
+  content: "";
   display: inline-block;
   align-items: center;
   width: 221px;
   height: 50px;
-}
+  background-image: url("../img/4k7Za.png"); */
+
 .form-submit{
   width: 221px;
   padding: 10px;
